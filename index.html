@@ -1,179 +1,477 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Home Page</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220708190927">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «pages»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «pages»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top">
+					<div class="header__left social-header">
+						<a href="" class="logo social-header__logo">
+							<img src="img/logo-main.svg" alt="Logo" />
+						</a>
+						<div class="social-header__links">
+							<a href="" class="_icon-facebook"></a>
+							<a href="" class="_icon-twitter"></a>
+							<a href="" class="_icon-linkedin"></a>
+						</div>
+					</div>
+					<div class="header__right menu">
+						<ul class="menu top-menu">
+							<li class="top-menu__list">
+								<a data-goto=".banner" href="" class="top-menu__link top-menu__link--active">Home</a>
+							</li>
+							<li class="top-menu__list">
+								<a data-goto=".book" href="" class="top-menu__link">About</a>
+							</li>
+							<li class="top-menu__list">
+								<a data-goto=".enhance" href="" class="top-menu__link">Pages</a>
+							</li>
+							<li data-goto=".footer" class="top-menu__list">
+								<a href="" class="top-menu__link">Contact Us</a>
+							</li>
+						</ul>
+
+						<a href="" class="menu__basket _icon-basket"></a>
+						<button type="submit" class="button menu__order btn btn-order">Order Today</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="banner">
+				<div class="banner__container">
+					<div class="banner__body">
+						<div class="banner__info">
+							<h3 class="banner__suptitle">Welcome to Pages!!!</h3>
+							<h1 class="banner__title">Your Books From The Best Writer.</h1>
+							<p class="banner__desctiption">We believe that reading books are essential to a healthy culture. <br />They’re where authors can connect with readers.</p>
+							<div class="banner__row banner__row--order">
+								<button type="submit" class="button banner__order btn btn-order">Order Today</button>
+								<a class="banner__trial" href="">Read Free Demo</a>
+							</div>
+							<div class="banner__row book-info">
+								<div class="book-info__item">
+									<h4>Pages:</h4>
+									<span>250 pages</span>
+								</div>
+								<div class="book-info__item">
+									<h4>Length:</h4>
+									<span>10 hours</span>
+								</div>
+								<div class="book-info__item">
+									<h4>Ratings:</h4>
+									<span>4.5/5 (305 ratings)</span>
+								</div>
+							</div>
+						</div>
+						<div class="banner__img">
+							<picture><source srcset="img/cover-img.webp" type="image/webp"><img src="img/cover-img.png" alt="Cover" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="book">
+				<div class="book__container">
+					<h2 class="book__title">The Author’s Book</h2>
+					<div class="book__body">
+						<div class="book__item">
+							<div class="book__img">
+								<picture><source srcset="img/book1.webp" type="image/webp"><img src="img/book1.png" alt="Atomic One’s" /></picture>
+							</div>
+							<div class="book__text">
+								<h4 class="book__name">Atomic One’s</h4>
+								<div class="book__price">$ 13.84 USD</div>
+
+								<p class="book__description">As the book contains theoretical content as well as solved questions.</p>
+								<div class="book__type">Printed Book</div>
+								<button class="book__order-btn btn">Order Now</button>
+							</div>
+						</div>
+
+						<div class="book__item">
+							<div class="book__img">
+								<picture><source srcset="img/book2.webp" type="image/webp"><img src="img/book2.png" alt="Atomic One’s" /></picture>
+							</div>
+							<div class="book__text">
+								<h4 class="book__name">The Dark Light</h4>
+								<div class="book__price">$ 86.11 USD</div>
+								<p class="book__description">As the book contains theoretical content as well as solved questions.</p>
+								<div class="book__type">Printed Book</div>
+								<button class="book__order-btn btn">Order Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="author">
+				<div class="author__container">
+					<div class="author__body">
+						<div class="author__img">
+							<picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.jpg" alt="author" /></picture>
+							<span></span>
+						</div>
+						<div class="author__info">
+							<h3 class="author__name">About the Author</h3>
+							<p class="author__description">
+								We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill
+								of reading that can last a lifetime.
+							</p>
+							<div class="author__stat">
+								<div class="author__book-published">
+									<h3>02</h3>
+									<span>Books published</span>
+								</div>
+								<div class="author__user-reviews">
+									<h3>4.5</h3>
+									<span>User Reviews</span>
+								</div>
+								<div class="author__best-awards">
+									<h3>04</h3>
+									<span>Best Seller Awards</span>
+								</div>
+							</div>
+							<div class="author__qr">
+								<div class="author__qr-img"><picture><source srcset="img/qr-code.webp" type="image/webp"><img src="img/qr-code.jpg" alt="" /></picture></div>
+								<div class="author__qr-info">
+									<div class="author__qr-name">John Abraham , Ph.d</div>
+									<div class="author__qr-email">Mail: <a href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a></div>
+									<div class="author__qr-phone">Phone: <a href="tel:+21235459000">(+2) 123 545 9000</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="trusted">
+				<div class="trusted__container">
+					<h3 class="trusted__title">Trusted By The Best</h3>
+					<div class="trusted__body">
+						<div class="trusted__item">
+							<img src="img/amazen corp.png" alt="Amazen Corp" />
+							<div class="trusted__name">Amazen Corp.</div>
+							<div class="trusted__description">They has been helping readers, music lovers, and videophiles find quality material.</div>
+						</div>
+
+						<div class="trusted__item">
+							<picture><source srcset="img//megan-books.webp" type="image/webp"><img src="img//megan-books.png" alt="Amazen Corp" /></picture>
+							<div class="trusted__name">Megan Books</div>
+							<div class="trusted__description">We help physical bookstores manage their overstock to the book inventory.</div>
+						</div>
+						<div class="trusted__item">
+							<picture><source srcset="img/megank.webp" type="image/webp"><img src="img/megank.png" alt="Megank" /></picture>
+							<div class="trusted__name">Megank</div>
+							<div class="trusted__description">Bookstore serving up the full spectrum of Black literature and wine black books.</div>
+						</div>
+						<div class="trusted__item">
+							<picture><source srcset="img/urban-store.webp" type="image/webp"><img src="img/urban-store.png" alt="Urban Store" /></picture>
+							<div class="trusted__name">Urban Store</div>
+							<div class="trusted__description">We also carry the latest records, issues of all of your favorite comic books.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="get-copy">
+				<div class="get-copy__container">
+					<div class="get-copy__body">
+						<div class="get-copy__info">
+							<div class="get-copy__title">Get Book Copy Today!</div>
+							<p class="get-copy__description">We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers.</p>
+							<button class="get-copy__btn btn">Order Now</button>
+						</div>
+						<div class="get-copy__img"><picture><source srcset="img/get-book-today.webp" type="image/webp"><img src="img/get-book-today.png" alt="Get Copy" /></picture></div>
+					</div>
+				</div>
+			</section>
+			<section class="learn">
+				<div class="learn__container">
+					<h3 class="learn__title">What Will You Learn?</h3>
+					<div class="learn__body">
+						<div class="learn__items">
+							<div class="learn__item">
+								<span class="learn__number">01</span>
+								<div class="learn__text">Use HDFS & Map Reduce for storing & analyzing data at scale.</div>
+							</div>
+							<div class="learn__item">
+								<span class="learn__number">02</span>
+								<div class="learn__text">Consume streaming data using Spark Streaming, Flink, and Storm.</div>
+							</div>
+							<div class="learn__item">
+								<span class="learn__number">03</span>
+								<div class="learn__text">Choose an appropriate data storage technology for your application</div>
+							</div>
+							<div class="learn__item">
+								<span class="learn__number">04</span>
+								<div class="learn__text">Analyze non-relational data using HBase, Cassandra, and MongoDB.</div>
+							</div>
+						</div>
+						<div class="learn__img">
+							<picture><source srcset="img/what-we-learn.webp" type="image/webp"><img src="img/what-we-learn.png" alt="What we learn" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="enhance">
+				<div class="enhance__container">
+					<h3 class="enhance__title">Enhance knowledge & Vision</h3>
+					<div class="enhance__body">
+						<div class="enhance__inner">
+							<div class="enhance__item">
+								<h4 class="enhance__name">Chapter-1 Get Started Intro</h4>
+								<p class="enhance__description">You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
+								<div class="enhance__info">
+									<div class="enhance__pages"><span>Pages :</span>106pages</div>
+									<div class="enhance__length"><span>Length :</span>2 Hours</div>
+								</div>
+							</div>
+							<div class="enhance__item">
+								<h4 class="enhance__name">Chapter-2 The Roman Culture</h4>
+								<p class="enhance__description">It will help to improve your life career with the perfect and needed knowledge about your life.</p>
+								<div class="enhance__info">
+									<div class="enhance__pages"><span>Pages :</span>180pages</div>
+									<div class="enhance__length"><span>Length :</span>3 Hours</div>
+								</div>
+							</div>
+
+							<div class="enhance__item">
+								<h4 class="enhance__name">Chapter-3 How They Servived</h4>
+								<p class="enhance__description">We wanted to create an easy, convenient way for you to get your books & support.</p>
+								<div class="enhance__info">
+									<div class="enhance__pages"><span>Pages :</span>250pages</div>
+									<div class="enhance__length"><span>Length :</span>4 Hours</div>
+								</div>
+							</div>
+
+							<div class="enhance__item">
+								<h4 class="enhance__name">Chapter-4 The End Of Romans</h4>
+								<p class="enhance__description">You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
+								<div class="enhance__info">
+									<div class="enhance__pages"><span>Pages :</span>175pages</div>
+									<div class="enhance__length"><span>Length :</span>3 Hours</div>
+								</div>
+							</div>
+						</div>
+						<div class="enhance__bottom">
+							<button class="enhance__btn btn">Start a 15-Days Free Trail</button>
+							<p class="enhance__short-description">
+								Short description about each chapter <br />
+								<a href="">Have any questions?</a> Contact us
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="words">
+				<div class="words__container">
+					<div class="words__body">
+						<div class="words__text">
+							<h3 class="words__title">Words From Our Readers</h3>
+							<p class="words__description">
+								We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill
+								of reading that can last a lifetime.
+							</p>
+							<div class="words__rating">
+								<span class="score-full"></span>
+								<span class="score-full"></span>
+								<span class="score-full"></span>
+								<span class="score-full"></span>
+								<span class="score-half"></span>
+								<div class="words__rating-score">(4.8/5)</div>
+							</div>
+							<div class="words__overall">Overall Customer Ratings</div>
+						</div>
+						<div class="words__cards">
+							<div class="words__card">
+								<div class="words__card-top">
+									<div class="words__img">
+										<picture><source srcset="img/review-photo-1.webp" type="image/webp"><img src="img/review-photo-1.png" alt="" /></picture>
+									</div>
+									<div>
+										<div class="words__name">James Williams</div>
+										<div class="words__rating">
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-half"></span>
+										</div>
+									</div>
+								</div>
+								<h3 class="words__quote">“ Great Books Collections ”</h3>
+								<p class="words__review">I was searching this book for many years and I was happy that I could find it here.</p>
+							</div>
+							<div class="words__card">
+								<div class="words__card-top">
+									<div class="words__img">
+										<picture><source srcset="img/review-photo-2.webp" type="image/webp"><img src="img/review-photo-2.png" alt="" /></picture>
+									</div>
+									<div>
+										<div class="words__name">James Williams</div>
+										<div class="words__rating">
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-half"></span>
+										</div>
+									</div>
+								</div>
+								<h3 class="words__quote">“ Great Books Collections ”</h3>
+								<p class="words__review">I was searching this book for many years and I was happy that I could find it here.</p>
+							</div>
+							<div class="words__card">
+								<div class="words__card-top">
+									<div class="words__img">
+										<picture><source srcset="img/review-photo-3.webp" type="image/webp"><img src="img/review-photo-3.png" alt="" /></picture>
+									</div>
+									<div>
+										<div class="words__name">James Williams</div>
+										<div class="words__rating">
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-full"></span>
+											<span class="score-half"></span>
+										</div>
+									</div>
+								</div>
+								<h3 class="words__quote">“ Great Books Collections ”</h3>
+								<p class="words__review">I was searching this book for many years and I was happy that I could find it here.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="articles">
+				<div class="articles__container">
+					<div class="articles__body">
+						<h3 class="articles__title">Articles & Resources</h3>
+						<div class="articles__items">
+							<div class="articles__item">
+								<div class="articles__img">
+									<picture><source srcset="img/article1.webp" type="image/webp"><img src="img/article1.jpg" alt="Articles" /></picture>
+								</div>
+								<div class="articles__text">
+									<h4 class="articles__name">Significant reading has more info number</h4>
+									<p class="articles__description">Override the digital divide with additional clickthroughs from DevOps for real-time schemas.</p>
+									<div class="articles__bottom">
+										<a href="" class="articles__readmore">Read more</a>
+										<span class="articles__date">October 6, 2021</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="articles__item">
+								<div class="articles__img">
+									<picture><source srcset="img/article2.webp" type="image/webp"><img src="img/article2.jpg" alt="Articles" /></picture>
+								</div>
+								<div class="articles__text">
+									<h4 class="articles__name">Many variations of pass majority have suffered</h4>
+									<p class="articles__description">Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.</p>
+									<div class="articles__bottom">
+										<a href="" class="articles__readmore">Read more</a>
+										<span class="articles__date">October 6, 2021</span>
+									</div>
+								</div>
+							</div>
+							<div class="articles__item">
+								<div class="articles__img">
+									<picture><source srcset="img/article3.webp" type="image/webp"><img src="img/article3.jpg" alt="Articles" /></picture>
+								</div>
+								<div class="articles__text">
+									<h4 class="articles__name">Words which don’t look even slightly believable</h4>
+									<p class="articles__description">Podcasting operational change management inside of workflows to establish a framework.</p>
+									<div class="articles__bottom">
+										<a href="" class="articles__readmore">Read more</a>
+										<span class="articles__date">October 6, 2021</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="get-updates">
+				<div class="get-updates__container">
+					<div class="get-updates__body">
+						<h3 class="get-updates__title">Get The Best Updates</h3>
+						<p class="get-updates__desctiption">Subscribe with your mail id to know the current update in book <br />edition at your fingertip with in a minute.</p>
+						<form class="get-updates__form" action="">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your Email ID..." class="input get-updates__input" />
+							<button class="get-updates__btn" type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="" class="footer__logo-link"><img src="img/icons/footer-logo.svg" alt="Лого" /></a>
+					<div class="footer__social">
+						<a href="" class="footer__social-link _icon-facebook"></a>
+						<a href="" class="footer__social-link _icon-twitter"></a>
+						<a href="" class="footer__social-link _icon-linkedin"></a>
+						<a href="" class="footer__social-link _icon-instagram"></a>
+					</div>
+				</div>
+				<div class="footer__menu">
+					<h3 class="footer__menu-title">Explore</h3>
+					<ul>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Home</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">About</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Articles</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Our Store</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer__pages">
+					<h3 class="footer__menu-title">Utility Pages</h3>
+					<ul>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Style Guide</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">404 Not Found</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Password Protected</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Licenses</a></li>
+						<li class="footer__menu-list"><a href="" class="footer__menu-link">Changelog</a></li>
+					</ul>
+				</div>
+				<div class="footer__contact">
+					<h3 class="footer__contact-title">Keep in Touch</h3>
+					<div class="footer__address">
+						<span>Address :</span>24A Kingston St, Los Vegas <br />
+						NC 28202, USA.
+					</div>
+					<div class="footer__email"><span>Mail :</span><a href="mailto:support@pages.com">support@pages.com</a></div>
+					<div class="footer__phone"><span>Phone :</span><a href="tel:+221234567900">(+22) 123 - 4567 - 900</a></div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
 		</div>
 	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220708190927"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
